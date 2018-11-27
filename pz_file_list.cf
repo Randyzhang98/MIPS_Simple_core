@@ -1,0 +1,15 @@
+pipeline_tb.v
+pipeline_zsj.v
+ALU_branch.v
+ALU_control.v
+ALU.v
+control.v
+instruction.v
+mux.v
+register.v
+Data_mem.v
+signextent.v
+branch_pc.v
+pc.v
+Hazard_detection_unit.v
+Looking_forward_detection.v
