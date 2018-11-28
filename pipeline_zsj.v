@@ -1,23 +1,24 @@
+`ifndef MODULE_PIPELINE
+`define MODULE_PIPELINE
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/11/22 00:45:51
-// Design Name: 
-// Module Name: pipeline_zsj
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
+`include "ALU_branch.v"
+`include "ALU_control.v"
+`include "ALU.v"
+`include "control.v"
+`include "instruction.v"
+`include "mux.v"
+`include "register_pipeline.v"
+`include "Data_mem.v"
+`include "signextent.v"
+`include "branch_pc.v"
+`include "pc.v"
+`include "Looking_forward_detection.v"
+`include "Hazard_detection_unit.v"
+`include "if_id.v"
+`include "id_ex.v"
+`include "ex_mem.v"
+`include "mem_wb.v"
 
 
 module pipeline_zsj(
@@ -286,7 +287,7 @@ module pipeline_zsj(
     // MEM stage
     Data_mem dm (
         .clk(clk),
-        .address(MEM_ALU_out),
+        .Address(MEM_ALU_out),
         .Write_data(MEM_register_read_data2),
         .Read_data (MEM_Data_mem_out),
         .MemWrite (MEM_MemWrite),
@@ -318,3 +319,5 @@ module pipeline_zsj(
     assign pcOut = IF_pc_out;
 
 endmodule
+
+`endif

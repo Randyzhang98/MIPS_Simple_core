@@ -1,3 +1,7 @@
+`ifndef MODULE_ALU
+`define MODULE_ALU
+
+
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -18,6 +22,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+
 
 module ALU(ALU_in1, ALU_in2, ALU_control, Zero, result);
     input [31:0] ALU_in1, ALU_in2;
@@ -48,3 +53,4 @@ module ALU(ALU_in1, ALU_in2, ALU_control, Zero, result);
 
 endmodule
 
+`endif

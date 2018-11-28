@@ -1,24 +1,6 @@
+`ifndef MODULE_PC
+`define MODULE_PC
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/11/22 00:45:05
-// Design Name: 
-// Module Name: PC
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module PC (
     input               clk,
@@ -37,3 +19,5 @@ module PC (
     end
 
 endmodule // PC
+
+`endif

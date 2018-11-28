@@ -1,23 +1,8 @@
+`ifndef MODULE_LOOKINGFORWARD
+`define MODULE_LOOKINGFORWARD
+
+    
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/11/22 00:43:58
-// Design Name: 
-// Module Name: Looking_forward_detection
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 module Looking_forward_detection (
     input       MEM_WB_RegWrite, 
@@ -104,3 +89,5 @@ end
 
 
 endmodule
+    
+`endif

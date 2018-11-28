@@ -1,23 +1,15 @@
+`ifndef MODULE_HARZARD_DECT
+`define MODULE_HARZARD_DECT
+
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/11/22 00:40:59
-// Design Name: 
-// Module Name: Hazard_detection_unit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+//
+
+
 
 
 module Hazard_detection_unit (
@@ -89,3 +81,5 @@ module Hazard_detection_unit (
     end
 
 endmodule
+
+`endif

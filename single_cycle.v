@@ -1,24 +1,19 @@
+`ifndef MODULE_SINGLE_CYCLE
+`define MODULE_SINGLE_CYCLE
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/11/22 00:57:30
-// Design Name: 
-// Module Name: single_cycle
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+`include "ALU_branch.v"
+`include "ALU_control.v"
+//`include "aluTC.v"
+`include "ALU.v"
+`include "control.v"
+`include "instruction.v"
+`include "mux.v"
+`include "register.v"
+`include "Data_mem.v"
+`include "signextent.v"
+`include "branch_pc.v"
+`include "pc.v"
 
 module single_cycle (input clk);
     wire    [31:0]  pc_in,
@@ -156,7 +151,7 @@ module single_cycle (input clk);
     );
 
     Data_mem Data_Mem (
-        .address (ALU_out),
+        .Address (ALU_out),
         .Write_data (regReadData2),
         .Read_data (Data_mem_out),
         .MemRead (memRead),
@@ -167,3 +162,5 @@ module single_cycle (input clk);
 
 
 endmodule // single_cycle
+
+`endif // MODULE_SINGLE_CYCLE

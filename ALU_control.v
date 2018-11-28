@@ -1,3 +1,7 @@
+
+`ifndef MODULE_ALUCONTROL
+`define MODULE_ALUCONTROL
+
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -18,6 +22,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+
 
 module ALU_control(ALU_op, funct, control_out);
     input [1:0] ALU_op;
@@ -50,3 +55,4 @@ module ALU_control(ALU_op, funct, control_out);
 
 endmodule
 
+`endif
