@@ -1,14 +1,25 @@
-`ifndef MODULE_CONTROL
-`define MODULE_CONTROL
-
 `timescale 1ns / 1ps
-///////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2018/11/13 20:52:58
+// Design Name: 
+// Module Name: control
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 module control(
 	input wire [5:0] opcode,
 	output reg RegDst,
@@ -162,5 +173,3 @@ module control(
 
 endmodule
 
-
-`endif

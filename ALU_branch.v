@@ -1,7 +1,3 @@
-
-`ifndef MODULE_ALUBRANCH
-`define MODULE_ALUBRANCH
-
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -23,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module ALU_branch(ra, imd_add, out);
     input [31:0] ra, imd_add;
     output [31:0] out;
@@ -35,5 +30,3 @@ module ALU_branch(ra, imd_add, out);
     end     
 
 endmodule
-
-`endif

@@ -1,6 +1,24 @@
-`ifndef MODULE_ID_EX
-`define MODULE_ID_EX
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2018/11/22 00:41:52
+// Design Name: 
+// Module Name: ID_EX
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module ID_EX (
     input               clk,
@@ -78,5 +96,3 @@ module ID_EX (
     end
 
 endmodule // ID_EX
-
-`endif // MODULE_ID_EX

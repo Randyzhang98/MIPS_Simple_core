@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2018/11/22 00:45:05
+// Create Date: 2018/11/22 00:54:35
 // Design Name: 
-// Module Name: PC
+// Module Name: pl_main
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PC (
-    input               clk,
-                        stall,
-    input       [31:0]  in,
-    output reg  [31:0]  out
-);
+module pl_main(
+    input clk
+    
 
-    initial begin
-        out = 32'b0;
-    end
-
-    always @ (posedge clk) begin
-        if (!stall)
-            out <= in;
-    end
-
-endmodule // PC
+    );
+endmodule

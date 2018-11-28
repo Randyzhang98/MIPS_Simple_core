@@ -1,7 +1,3 @@
-`ifndef MODULE_MUX
-`define MODULE_MUX
-
-
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -31,7 +27,5 @@ module mux(in1, in2, select, out);
     output [max:0] out;
 
     assign out = (select == 0) ? in1 : in2;
-
+    
 endmodule
-
-`endif

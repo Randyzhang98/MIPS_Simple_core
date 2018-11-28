@@ -1,14 +1,25 @@
-
-`ifndef MODULE_SIGNEXTENT
-`define MODULE_SIGNEXTENT
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2018/11/13 21:19:23
+// Design Name: 
+// Module Name: signextent
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 module signextent(
 	input [15:0] instruction,
 	output reg [31:0] data
@@ -21,5 +32,3 @@ module signextent(
 				data = {16'b1111111111111111, instruction};
 		end
 endmodule
-
-`endif 

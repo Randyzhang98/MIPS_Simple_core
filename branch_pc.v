@@ -1,6 +1,3 @@
-`ifndef MODULE_BRANCHPC
-`define MODULE_BRANCHPC
-
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -38,5 +35,3 @@ module branch_pc(ra, branch_shamt, jump_address, Jump, Beq, Bne, PC_write, Zero)
 
 
 endmodule
-
-`endif
